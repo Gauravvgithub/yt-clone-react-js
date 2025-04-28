@@ -1,0 +1,28 @@
+@media screen and (max-width: 600px) {
+    .sidebarDiv{
+      display: none;
+    }
+    .threelines{
+        display: none;
+    }
+    .ytlogo{
+        margin-left: -20px;
+        height: 30px;
+    }
+    .mic{
+        display: none;
+    }
+    .addvideo{
+        display: none;
+    }
+    .bell{
+        display: none;
+    }
+    .searchBox{
+        padding-top: 0.5rem;
+        margin-left: -4rem;
+    }
+    .listitems{
+        display: none;
+    }
+}
