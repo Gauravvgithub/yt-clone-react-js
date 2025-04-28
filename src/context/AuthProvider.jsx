@@ -6,7 +6,7 @@ export const AuthContext = createContext();
 export default function AuthProvider({ children }) {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
-  const [value, setValue] = useState("latest songs");
+  const [value, setValue] = useState();
 
   useEffect(() => {
     fetchAlldata(value);
