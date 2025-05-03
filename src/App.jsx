@@ -9,7 +9,7 @@ import PlayingVideo from "./components/PlayingVideo";
 
 
 const App = () => {
-  const { loading }=useAuth()
+  const { loading }= useAuth()
 
   return (
     <div>
