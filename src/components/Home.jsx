@@ -9,9 +9,9 @@ function Home() {
   
   return (
     <div className="flex mt-20">
-      <Sidebar />
-      <div className="h-[calc(100vh-6.625rem)] overflow-y-scroll overflow-x-hidden">
-        <ListItems />
+      {!loading && <Sidebar />}
+      {!loading && <div className="h-[calc(100vh-6.625rem)] overflow-y-scroll overflow-x-hidden">
+      {!loading && <ListItems />}
         {!loading && (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 p-5">
             {data
@@ -21,7 +21,7 @@ function Home() {
               ))}
           </div>
         )}
-      </div>
+      </div>}
     </div>
   );
 }
